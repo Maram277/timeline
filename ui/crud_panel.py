@@ -3,36 +3,36 @@ from tkinter import ttk
 
 class CrudPanel(ttk.Frame):
     """
-    Återanvändbar panel för Characters/Locations med 2 fält (name, description),
-    lista och knappar: Lägg till / Uppdatera / Ta bort.
+    Reusable panel for Characters/Locations with 2 fields (name, description),
+    a list, and buttons: Add / Update / Delete.
     """
     def __init__(self, master, title: str, on_change, *args, **kwargs):
         super().__init__(master, *args, **kwargs)
         self.on_change = on_change
         self._items: list[dict[str, str]] = []
 
-        # Titel
+        # Title
         ttk.Label(self, text=title, font=("TkDefaultFont", 11, "bold")).grid(
             row=0, column=0, columnspan=3, pady=(2, 6)
         )
 
-        # Form (2 fält)
-        ttk.Label(self, text="Namn").grid(row=1, column=0, sticky="w")
+        # Form (2 fields)
+        ttk.Label(self, text="Name").grid(row=1, column=0, sticky="w")
         self.name_var = tk.StringVar()
         self.name_entry = ttk.Entry(self, textvariable=self.name_var, width=34)
         self.name_entry.grid(row=1, column=1, columnspan=2, sticky="ew", pady=2)
 
-        ttk.Label(self, text="Beskrivning").grid(row=2, column=0, sticky="w")
+        ttk.Label(self, text="Description").grid(row=2, column=0, sticky="w")
         self.desc_var = tk.StringVar()
         self.desc_entry = ttk.Entry(self, textvariable=self.desc_var, width=34)
         self.desc_entry.grid(row=2, column=1, columnspan=2, sticky="ew", pady=(0, 6))
 
-        # Knappar
-        ttk.Button(self, text="Lägg till", command=self.add_item).grid(row=3, column=0, pady=2, sticky="ew")
-        ttk.Button(self, text="Uppdatera", command=self.update_item).grid(row=3, column=1, pady=2, sticky="ew")
-        ttk.Button(self, text="Ta bort", command=self.delete_item).grid(row=3, column=2, pady=2, sticky="ew")
+        # Buttons
+        ttk.Button(self, text="Add", command=self.add_item).grid(row=3, column=0, pady=2, sticky="ew")
+        ttk.Button(self, text="Update", command=self.update_item).grid(row=3, column=1, pady=2, sticky="ew")
+        ttk.Button(self, text="Delete", command=self.delete_item).grid(row=3, column=2, pady=2, sticky="ew")
 
-        # Lista
+        # List
         self.listbox = tk.Listbox(self, height=10)
         self.listbox.grid(row=4, column=0, columnspan=3, sticky="nsew", pady=(6, 0))
         self.listbox.bind("<<ListboxSelect>>", self.fill_form_from_selection)
@@ -42,7 +42,7 @@ class CrudPanel(ttk.Frame):
         self.columnconfigure(1, weight=1)
         self.rowconfigure(4, weight=1)
 
-    # --- API ---
+    # --- Public API ---
     def data(self) -> list[dict]:
         return self._items
 
@@ -50,7 +50,7 @@ class CrudPanel(ttk.Frame):
         self._items = items or []
         self.refresh()
 
-    # --- internal ---
+    # --- Internals ---
     def refresh(self):
         self.listbox.delete(0, tk.END)
         for it in self._items:
