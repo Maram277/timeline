@@ -1,0 +1,13 @@
+    {
+    "characters": [
+        {
+        "name": "Alice",
+        "description": "Main hero"
+        }
+    ],
+    "locations": [
+        {
+        "name": "Castle"
+        }
+    ]
+    }
