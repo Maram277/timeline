@@ -1,4 +1,3 @@
-import json
 from pathlib import Path
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
@@ -10,30 +9,30 @@ from storage import new_empty_project, load_project, save_project
 class TimelineApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Timeline Projekt")
+        self.title("Timeline Project")
         self.geometry("720x420")
         self.minsize(680, 380)
 
         self.project_path: Path | None = None
         self._dirty = False
 
-        # Meny
+        # Menu
         menubar = tk.Menu(self)
         file_menu = tk.Menu(menubar, tearoff=0)
-        file_menu.add_command(label="Ny", command=self.new_project)
-        file_menu.add_command(label="Öppna…   Ctrl+O", command=self.open_project)
-        file_menu.add_command(label="Spara     Ctrl+S", command=self.save_project)
-        file_menu.add_command(label="Spara som…", command=self.save_as)
+        file_menu.add_command(label="New", command=self.new_project)
+        file_menu.add_command(label="Open…   Ctrl+O", command=self.open_project)
+        file_menu.add_command(label="Save     Ctrl+S", command=self.save_project)
+        file_menu.add_command(label="Save As…", command=self.save_as)
         file_menu.add_separator()
-        file_menu.add_command(label="Avsluta", command=self.quit)
-        menubar.add_cascade(label="Arkiv", menu=file_menu)
+        file_menu.add_command(label="Exit", command=self.quit)
+        menubar.add_cascade(label="File", menu=file_menu)
         self.config(menu=menubar)
 
-        # Kortkommandon
+        # Shortcuts
         self.bind("<Control-s>", lambda e: self.save_project())
         self.bind("<Control-o>", lambda e: self.open_project())
 
-        # Layout: två CRUD-paneler sida vid sida
+        # Layout: two CRUD panels side-by-side
         container = ttk.Frame(self, padding=10)
         container.pack(fill="both", expand=True)
         container.columnconfigure(0, weight=1)
@@ -41,24 +40,24 @@ class TimelineApp(tk.Tk):
         container.rowconfigure(0, weight=1)
 
         self.characters_panel = CrudPanel(
-            container, title="Karaktärer (name, description)",
+            container, title="Characters (name, description)",
             on_change=self.mark_dirty
         )
         self.characters_panel.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
 
         self.locations_panel = CrudPanel(
-            container, title="Platser (name, description)",
+            container, title="Locations (name, description)",
             on_change=self.mark_dirty
         )
         self.locations_panel.grid(row=0, column=1, sticky="nsew", padx=(8, 0))
 
         self.new_project()
 
-    # --- state helpers ---
-    def mark_dirty(self):  # kallas vid ändringar i panelerna
+    # --- State helpers ---
+    def mark_dirty(self):
         self._dirty = True
 
-    # --- file actions ---
+    # --- File actions ---
     def new_project(self):
         data = new_empty_project()
         self.characters_panel.set_data(data["characters"])
@@ -70,7 +69,7 @@ class TimelineApp(tk.Tk):
         path = filedialog.asksaveasfilename(
             defaultextension=".json",
             filetypes=[("JSON files", "*.json")],
-            title="Spara projekt som"
+            title="Save project as"
         )
         if path:
             self.project_path = Path(path)
@@ -90,13 +89,13 @@ class TimelineApp(tk.Tk):
             save_project(self.project_path, data)
             self._dirty = False
         except Exception as e:
-            messagebox.showerror("Fel", f"Kunde inte spara filen:\n{e}")
+            messagebox.showerror("Error", f"Could not save file:\n{e}")
 
     def open_project(self):
         path = filedialog.askopenfilename(
             defaultextension=".json",
             filetypes=[("JSON files", "*.json")],
-            title="Öppna projekt"
+            title="Open project"
         )
         if not path:
             return
@@ -107,4 +106,4 @@ class TimelineApp(tk.Tk):
             self.project_path = Path(path)
             self._dirty = False
         except Exception as e:
-            messagebox.showerror("Fel", f"Kunde inte öppna filen:\n{e}")
+            messagebox.showerror("Error", f"Could not open file:\n{e}")
