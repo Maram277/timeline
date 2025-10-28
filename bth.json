@@ -1,0 +1,17 @@
+{
+  "characters": [
+    {
+      "name": "maram",
+      "description": "skolan"
+    }
+  ],
+  "locations": [],
+  "events": [
+    {
+      "title": "demo1",
+      "date": "343",
+      "character": "maram",
+      "location": "bth"
+    }
+  ]
+}

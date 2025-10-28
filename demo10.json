@@ -1,0 +1,50 @@
+{
+  "characters": [
+    {
+      "name": "maram",
+      "description": "ska åka till skolan imorgon"
+    },
+    {
+      "name": "sara",
+      "description": "ska jobba på måndag"
+    },
+    {
+      "name": "Dima",
+      "description": "är en huvudspelare i filmen"
+    }
+  ],
+  "locations": [
+    {
+      "name": "bth",
+      "description": "karlskrona, gräsvik"
+    },
+    {
+      "name": "bio",
+      "description": "Ronneby, 37456"
+    },
+    {
+      "name": "Malmö",
+      "description": "broväggen, 38722"
+    }
+  ],
+  "events": [
+    {
+      "title": "demo",
+      "date": "1/10",
+      "character": "maram",
+      "location": "bth"
+    },
+    {
+      "title": "kvälls jobb",
+      "date": "3/6",
+      "character": "sara",
+      "location": "bio"
+    },
+    {
+      "title": "huvudspelare",
+      "date": "1/2",
+      "character": "Dima",
+      "location": "Malmö"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "characters": [
+    {
+      "name": "maram",
+      "description": "jnkjnn"
+    }
+  ],
+  "locations": [
+    {
+      "name": "skolan",
+      "description": "kjboi"
+    }
+  ],
+  "events": [
+    {
+      "title": "demo",
+      "date": "33",
+      "character": "maram, sedra",
+      "location": "skolan"
+    }
+  ]
+}

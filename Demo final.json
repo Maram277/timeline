@@ -1,0 +1,63 @@
+{
+  "characters": [
+    {
+      "name": "Sara",
+      "description": "är en gymtränare",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/OIP (1).webp"
+    },
+    {
+      "name": "Mohammad",
+      "description": "Är en lärare",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/9e7b8d0cd7f06f53a7520169d07f4eb2.jpg"
+    },
+    {
+      "name": "Maram",
+      "description": "Är en student",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/0.jpg"
+    }
+  ],
+  "locations": [
+    {
+      "name": "Ronneby",
+      "description": "ronebygatan 44",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/ladda ned.png"
+    },
+    {
+      "name": "bth",
+      "description": "ronebygatan 44",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/OIP.webp"
+    }
+  ],
+  "events": [
+    {
+      "Event": "föreläsning",
+      "date": "5/2/2025",
+      "characters": [
+        "Mohammad"
+      ],
+      "activity": "undervisa på skolan",
+      "location": "bth",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/9e7b8d0cd7f06f53a7520169d07f4eb2.jpg"
+    },
+    {
+      "Event": "Demo",
+      "date": "1/9/2025",
+      "characters": [
+        "Maram"
+      ],
+      "activity": "presentera min projekt",
+      "location": "bth",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/0.jpg"
+    },
+    {
+      "Event": "Gym",
+      "date": "7/10/2025",
+      "characters": [
+        "Sara"
+      ],
+      "activity": "träna",
+      "location": "Ronneby",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/OIP (1).webp"
+    }
+  ]
+}

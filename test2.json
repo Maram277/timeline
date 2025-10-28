@@ -1,0 +1,154 @@
+{
+  "characters": [
+    {
+      "name": "sedra",
+      "description": "öoihföiuwgeföug"
+    },
+    {
+      "name": "rawan",
+      "description": "äter kakor"
+    },
+    {
+      "name": "Maram",
+      "description": "jobbar på Ericsson"
+    },
+    {
+      "name": "sara",
+      "description": "jobbar på Ericsson"
+    }
+  ],
+  "locations": [
+    {
+      "name": "skolan",
+      "description": "jkbjhjhbhj"
+    },
+    {
+      "name": "bth",
+      "description": "i karlskrona"
+    },
+    {
+      "name": "Ronneby",
+      "description": "Ronnebyväggen 21"
+    },
+    {
+      "name": "företag",
+      "description": "i karlskrona"
+    }
+  ],
+  "events": [
+    {
+      "title": "event",
+      "date": "1/4",
+      "characters": [
+        "rawan",
+        "Maram",
+        "sara"
+      ],
+      "location": "bth"
+    },
+    {
+      "title": "event",
+      "date": "1/4",
+      "characters": [
+        "sara"
+      ],
+      "location": "bth"
+    },
+    {
+      "title": "demo",
+      "date": "3 sep",
+      "characters": [
+        "sedra"
+      ],
+      "location": "skolan"
+    },
+    {
+      "title": "dansing",
+      "date": "10/9",
+      "characters": [],
+      "location": ""
+    },
+    {
+      "title": "dansing",
+      "date": "10/9",
+      "characters": [
+        "sara"
+      ],
+      "location": "Ronneby"
+    },
+    {
+      "title": "mat",
+      "date": "6/10/2025",
+      "characters": [
+        "rawan"
+      ],
+      "location": "bth"
+    },
+    {
+      "title": "mat",
+      "date": "6/10/2025",
+      "characters": [
+        "rawan"
+      ],
+      "location": "bth"
+    },
+    {
+      "title": "Event",
+      "date": "15/10",
+      "characters": [
+        "Maram"
+      ],
+      "location": "Ronneby"
+    },
+    {
+      "title": "Event",
+      "date": "15/10",
+      "characters": [
+        "Maram",
+        "sara"
+      ],
+      "location": "företag"
+    },
+    {
+      "title": "event",
+      "date": "10/11",
+      "characters": [
+        "sedra",
+        "rawan",
+        "Maram"
+      ],
+      "location": "bth"
+    },
+    {
+      "title": "event",
+      "date": "10/11",
+      "characters": [
+        "sedra",
+        "rawan",
+        "Maram"
+      ],
+      "location": "bth"
+    },
+    {
+      "title": "event",
+      "date": "10/11",
+      "characters": [
+        "sedra",
+        "rawan",
+        "Maram"
+      ],
+      "location": "bth"
+    },
+    {
+      "title": "event",
+      "date": "10/12",
+      "characters": [
+        "sedra",
+        "rawan",
+        "Maram",
+        "sara"
+      ],
+      "location": "skolan"
+    }
+  ]
+}

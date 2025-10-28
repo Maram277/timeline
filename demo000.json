@@ -1,0 +1,43 @@
+{
+  "characters": [
+    {
+      "name": "Maram",
+      "description": "Huvudspelare"
+    },
+    {
+      "name": "sara",
+      "description": "Andraspelare"
+    }
+  ],
+  "locations": [
+    {
+      "name": "Karlskrona",
+      "description": "bth"
+    },
+    {
+      "name": "Ronney",
+      "description": "jhoiuh"
+    }
+  ],
+  "events": [
+    {
+      "title": "teaterföreställning",
+      "date": "17/8",
+      "characters": [
+        "Maram",
+        "sara"
+      ],
+      "activity": "träna",
+      "location": "Karlskrona"
+    },
+    {
+      "title": "demo",
+      "date": "10/10",
+      "characters": [
+        "Maram"
+      ],
+      "activity": "presenterar",
+      "location": "Karlskrona"
+    }
+  ]
+}

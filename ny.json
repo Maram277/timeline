@@ -1,0 +1,34 @@
+{
+  "characters": [
+    {
+      "name": "Rama",
+      "description": "Hon kom lite sent igår till föreläsningen"
+    }
+  ],
+  "locations": [
+    {
+      "name": "Campus",
+      "description": "den ligger nära till Bergåsa stationen"
+    }
+  ],
+  "events": [
+    {
+      "title": "wedjb",
+      "date": "3",
+      "character": "sara",
+      "location": ""
+    },
+    {
+      "title": "dd",
+      "date": "2e",
+      "character": "jh",
+      "location": "kallineg"
+    },
+    {
+      "title": "book event",
+      "date": "3/9/2025",
+      "character": "sara",
+      "location": "Campus"
+    }
+  ]
+}

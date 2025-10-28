@@ -1,0 +1,67 @@
+{
+  "characters": [
+    {
+      "name": "Maram",
+      "description": "Är en student",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/0.jpg"
+    },
+    {
+      "name": "Lara",
+      "description": "Är en tränare",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/a27b52cb6ac12408a269b818bf928246.jpg"
+    }
+  ],
+  "locations": [
+    {
+      "name": "karlskrona",
+      "description": "bth",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/57da1d04320ff518cf9b719cde9e141d.jpg"
+    },
+    {
+      "name": "Ronneby",
+      "description": "gym",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/ladda ned.png"
+    }
+  ],
+  "events": [
+    {
+      "title": "Gym",
+      "date": "8/1/2025",
+      "characters": [
+        "Lara"
+      ],
+      "activity": "",
+      "location": "Ronneby",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/b0f31a52f225fcdebfd2cc830ec10679.jpg"
+    },
+    {
+      "title": "plugg",
+      "date": "7/4/2025",
+      "characters": [],
+      "activity": "plugga till demo3",
+      "location": "karlskrona",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/0.jpg"
+    },
+    {
+      "title": "plugg",
+      "date": "6/9/2025",
+      "characters": [
+        "Maram"
+      ],
+      "activity": "",
+      "location": "karlskrona",
+      "image": "C:/Users/mrama/OneDrive/Pictures/Screenshots/0.jpg"
+    },
+    {
+      "title": "pluggar",
+      "date": "8/9/2025",
+      "characters": [
+        "Maram",
+        "Lara"
+      ],
+      "activity": "ska plugga tills",
+      "location": "karlskrona",
+      "image": ""
+    }
+  ]
+}
